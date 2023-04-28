@@ -1,0 +1,374 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+$love: "stim";
+
+
+header{ display: flex; flex-direction: row; text-align: center;
+    .logo{ width: 35%;
+        img{width: 100%;}
+    }
+    ul{ display: flex; flex-direction: row; margin-top: 25px; margin-left: 16%;
+        li{
+            a{color: rgb(0, 31, 40); text-decoration: none;padding: 5px; font-family: $love; font-size: 8px;}
+        }
+    }
+}
+
+.banner{
+    h1{font-family: $love;font-size: 50px;margin-left: 20px;color: rgb(0, 49, 66);margin-top: 20px;}
+    h3{font-family: $love;font-size: 30px;margin-left: 20px;color: rgb(0, 49, 66);margin-top: 10px;
+        span{color: rgb(215, 123, 65);}
+    }
+    .line{display: flex; flex-direction: row;
+        .dash{height: 2px;width: 60px;background-color: rgb(215, 123, 65);margin-top: 16px;margin-left: 20px;}
+    h5{font-family: $love;margin-left: 10px;color: black;margin-top: 10px;}
+    }
+    .images{display: flex; flex-direction: column; margin-top: 20px;
+        img{width: 100vw;}
+    }
+}
+
+.about{
+    h3{font-family: $love;font-size: 30px;margin-left: 30px;color: rgb(215, 123, 65);margin-top: 30px;}
+    p{font-family: $love;font-size: 16px;margin-top: 20px;margin-left: 30px;}
+    .image{width: 100%; margin-top: 40px;
+    img{width: 100%;}}
+}
+
+.services{background-color: rgb(0, 57, 79);
+    h3{font-family: $love;font-size: 30px;margin-left: 10px;color: rgb(255, 255, 255);padding-top: 60px;}
+    h4{font-family: $love;font-size: 20px;margin-left: 30px;color: rgb(215, 123, 65);margin-top: 20px;}
+    .tsee{background-color: rgb(215, 123, 65);width: 90%;height: 2px;margin-left: 20px;margin-top: 10px;}
+    p{font-family: $love;font-size: 16px;margin-top: 20px;margin-left: 30px;color: white;}
+    .pic{width: 95%;
+        img{width: 100%;margin-left: 10px;margin-top: 20px;}
+    }
+    .style{display: flex;flex-direction: row;
+    .orange{width: 40px;height: 5px;background-color: rgb(215, 123, 65);border-radius: 5px;margin-bottom: 20px;margin-left: 45%;margin-top: 30px;}
+   }
+   .dot{ .dotone{width: 15px;height: 5px;border-radius: 5px;color: rgb(190, 22, 22);}}
+   .dot{.dottwo{width: 5px;height: 5px;border-radius: 5px;color: rgb(255, 255, 255);}}
+}
+
+.subscribe{
+    h3{font-family: $love;font-size: 30px;margin-left: 30px;color: rgb(215, 123, 65);margin-top: 30px;}
+    button{background-color: rgb(0, 57, 79); height: 60px; width: 180px; border: 0px; margin-left: 100px; margin-top: 30px; margin-bottom: 40px;
+    a{color: rgb(255, 255, 255);text-decoration: none;}}
+    .image{width: 100%; margin-bottom: 40px;
+        img{width: 100%;}
+    }
+}
+
+.enquiry{background-color: rgb(237, 238, 240);
+    .statue{width: 100%;
+        img{width: 100%;}
+    }
+    h3{font-family: $love;font-size: 30px;margin-left: 30px;color: rgb(215, 123, 65);margin-top: 30px;}
+    p{font-family: $love;font-size: 16px;margin-top: 20px;margin-left: 30px;color: rgb(30, 68, 83);line-height: 20px;}
+    form{margin-top: 40px;margin-left: 20px;}
+    input{width: 88%;border: 0px;height: 60px;margin: 10px;}
+    input::placeholder{padding: 20px;}
+    textarea{border: 0px;width: 88%;margin-left: 10px;margin-top: 10px;}
+    textarea::placeholder{padding: 20px;}
+    button{background-color: rgb(0, 57, 79);color: rgb(255, 255, 255);height: 60px;width: 84%;border: 0px;margin-top: 20px;margin-bottom: 40px;margin-left: 30px;font-size: 20px;}
+}
+
+.contact{background-image: url(./imgs/Rectangle\ 80.png);
+    h3{font-family: $love;font-size: 30px;margin-left: 30px;color: rgb(237, 238, 240);padding-top: 30px;}
+    p{font-family: $love;font-size: 16px;margin-top: 20px;margin-left: 30px;color: rgb(237, 238, 240);line-height: 20px; margin-bottom: 40px;}
+    .links{display: flex; flex-direction: row;}}
+
+
+footer{text-align: center;
+    .image{width: 50%; margin-left: 25%;
+        img{width: 100%;}
+    }
+}
+
+
+
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {  
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+
+    header{ display: flex; flex-direction: row; text-align: center;
+        .logo{ width: 30%;
+            img{width: 100%;}
+        }
+        ul{ display: flex; flex-direction: row; margin-top: 40px; margin-left: 20%;
+            li{
+                a{color: rgb(0, 31, 40); text-decoration: none;padding: 10px; font-family: $love; font-size: 20px;}
+                a:hover{color: rgb(215, 123, 65);}
+            }
+        }
+    }
+    
+    .banner{
+        h1{font-family: $love;font-size: 90px;margin-left: 20px;color: rgb(0, 49, 66);margin-top: 20px;}
+        h3{font-family: $love;font-size: 50px;margin-left: 20px;color: rgb(0, 49, 66);margin-top: 10px;
+            span{color: rgb(215, 123, 65);}
+        }
+        .line{display: flex; flex-direction: row;
+            .dash{height: 3px;width: 80px;background-color: rgb(215, 123, 65);margin-top: 20px;margin-left: 30px;}
+        h5{font-family: $love;margin-left: 20px;color: black;margin-top: 10px;}
+        }
+        .images{display: flex; flex-direction: column; margin-top: 20px; padding: -20px;
+            img{width: 100vw;}
+            .first{margin-top: 0px;}
+            .second{margin-top: 15px;}
+            .third{margin-left: -12px;}
+            .fourth{margin-top: 80px; margin-left: -22px;}
+            .fifth{width: 180px; margin-left: -32px;
+            img{width: 100%;}}
+        }
+    }
+    
+    .about{ margin-top: 60px;
+        h3{font-family: $love;font-size: 30px;margin-left: 30px;color: rgb(215, 123, 65);margin-top: 50px;}
+        p{font-family: $love;font-size: 16px;margin-top: 30px;margin-left: 30px;}
+        .image{width: 40%; margin-top: 40px;
+        img{width: 100%;}}
+    }
+    
+    .services{background-color: rgb(0, 57, 79);
+        h3{font-family: $love;font-size: 30px;margin-left: 10px;color: rgb(255, 255, 255);padding-top: 100px;}
+        .backone{background-color: rgb(1, 63, 88); width: 95%; margin: 20px;margin-top: 60px;}
+        h4{font-family: $love;font-size: 30px;margin-left: 30px;color: rgb(215, 123, 65);margin-top: 20px;}
+        .tsee{background-color: rgb(215, 123, 65);width: 100%;height: 1.5px;margin-left: 0px;margin-top: 10px;}
+        p{font-family: $love;font-size: 16px;margin-top: 20px;margin-left: 30px;color: white;}
+        .pic{width: 100%;
+            img{width: 100%;margin-left: 0px;margin-top: 10px;}
+        }
+        .style{display: flex;flex-direction: row;
+        .orange{width: 60px;height: 11px;background-color: rgb(215, 123, 65);border-radius: 6px;margin-bottom: 20px;margin-left: 45%;margin-top: 30px;}
+        .dotone{width: 15px;height: 15px;border-radius: 5px;color:red; z-index: 300; position: absolute;}
+       } 
+    }
+    
+    .subscribe{display: flex; flex-direction: row;
+        h3{font-family: $love;font-size: 30px;margin-left: 30px;color: rgb(215, 123, 65);margin-top: 220px;}
+        button{background-color: rgb(0, 57, 79); height: 70px; width: 280px; border: 0px; margin-left: 30px; margin-top: 30px; margin-bottom: 40px;
+        a{color: rgb(255, 255, 255);text-decoration: none; font-family: $love;font-size: 20px;}}
+        .image{width: 45%; margin-bottom: 150px; margin-top: 180px; margin-left: 30px;
+            img{width: 100%;}
+        }
+    }
+    
+    .enquiry{background-color: rgb(239, 240, 242);
+        .statue{width: 100%;
+            img{width: 100%;}
+        }
+        .info{margin-left: 170px;text-align: center;}
+        h3{font-family: $love;font-size: 30px;margin-left: 30px;color: rgb(215, 123, 65);margin-top: 60px;}
+        p{font-family: $love;font-size: 16px;margin-top: 20px;margin-left: 30px;color: rgb(30, 68, 83);line-height: 20px;}
+        
+        form{margin-top: 40px;margin-left: 20px;}
+        input{width: 85%;border: 0px;height: 60px;margin: 10px;}
+        input::placeholder{padding: 20px;}
+        textarea{border: 0px;width: 85%;margin-left: 0px;margin-top: 10px;}
+        textarea::placeholder{padding: 20px;}
+        button{background-color: rgb(0, 57, 79);color: rgb(255, 255, 255);height: 70px;width: 82%;border: 0px;margin-top: 20px;margin-bottom: 40px;margin-left: 20px;font-size: 20px;}
+    }
+    
+    .contact{background-image: url(./imgs/Rectangle\ 80.png); height: 400px;
+        h3{font-family: $love;font-size: 45px;margin-left: 60px;color: rgb(237, 238, 240);padding-top: 150px;}
+        p{font-family: $love;font-size: 20px;margin-top: 20px;margin-left: 60px;color: rgb(237, 238, 240);line-height: 30px; margin-bottom: 80px;}
+        .links{display: flex; flex-direction: row; padding: 0px;
+        .phone{margin-left: 150px;}}}
+    
+    
+    footer{text-align: center;
+        .image{width: 41%; margin-left: 30%; margin-bottom: 20px;
+            img{width: 100%;}
+        }
+    }
+    
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+    header{ display: flex; flex-direction: row; text-align: center;
+        .logo{ width: 20%;
+            img{width: 100%;}
+        }
+        ul{ display: flex; flex-direction: row; margin-top: 60px; margin-left: 35%;
+            li{
+                a{color: rgb(0, 31, 40); text-decoration: none;padding: 20px; font-family: $love; font-size: 35px;}
+                a:hover{color: rgb(215, 123, 65);}
+            }
+        }
+    }
+    
+    .banner{
+        h1{font-family: $love;font-size: 90px;margin-left: 20px;color: rgb(0, 49, 66);margin-top: 20px;}
+        h3{font-family: $love;font-size: 50px;margin-left: 20px;color: rgb(0, 49, 66);margin-top: 10px;
+            span{color: rgb(215, 123, 65);}
+        }
+        .line{display: flex; flex-direction: row;
+            .dash{height: 3px;width: 80px;background-color: rgb(215, 123, 65);margin-top: 20px;margin-left: 30px;}
+        h5{font-family: $love;margin-left: 20px;color: black;margin-top: 10px;}
+        }
+        .images{display: flex; flex-direction: column; margin-top: 20px; padding: -20px;
+            img{width: 100vw;}
+            .first{margin-top: 20px;}
+            .second{margin-top: 15px;}
+            .third{margin-left: -12px;}
+            .fourth{margin-top: 155px; margin-left: -22px;}
+            .fifth{width: 350px; margin-left: -32px;
+            img{width: 100%;}}
+        }
+    }
+    
+    .about{ margin-top: 60px;
+        h3{font-family: $love;font-size: 50px;margin-left: 30px;color: rgb(215, 123, 65);margin-top: 120px;}
+        p{font-family: $love;font-size: 16px;margin-top: 30px;margin-left: 30px;}
+        .image{width: 40%; margin-top: 40px;
+        img{width: 100%;}}
+    }
+    
+    .services{background-color: rgb(0, 57, 79);
+        h3{font-family: $love;font-size: 50px;margin-left: 10px;color: rgb(255, 255, 255);padding-top: 100px;}
+        .backone{background-color: rgb(1, 63, 88); width: 30%; margin: 20px;margin-top: 60px;}
+        h4{font-family: $love;font-size: 30px;margin-left: 30px;color: rgb(215, 123, 65);margin-top: 20px;}
+        .tsee{background-color: rgb(215, 123, 65);width: 100%;height: 1.5px;margin-left: 0px;margin-top: 10px;}
+        p{font-family: $love;font-size: 16px;margin-top: 20px;margin-left: 30px;color: white;}
+        .pic{width: 100%;
+            img{width: 100%;margin-left: 0px;margin-top: 10px;}
+        }
+        .style{display: flex;flex-direction: row;
+        .orange{width: 60px;height: 11px;background-color: rgb(215, 123, 65);border-radius: 6px;margin-bottom: 20px;margin-left: 45%;margin-top: 30px;}
+        .dotone{width: 15px;height: 15px;border-radius: 5px;color:red; z-index: 300; position: absolute;}
+       } 
+    }
+    
+    .subscribe{display: flex; flex-direction: row;
+        h3{font-family: $love;font-size: 40px;margin-left: 30px;color: rgb(215, 123, 65);margin-top: 320px;}
+        button{background-color: rgb(0, 57, 79); height: 70px; width: 380px; border: 0px; margin-left: 30px; margin-top: 30px; margin-bottom: 40px;
+        a{color: rgb(255, 255, 255);text-decoration: none; font-family: $love;font-size: 25px;}}
+        .image{width: 45%; margin-bottom: 150px; margin-top: 180px; margin-left: 30px;
+            img{width: 100%;}
+        }
+    }
+    
+    .enquiry{background-color: rgb(239, 240, 242);
+        .statue{width: 40%; margin-top: 40px;
+            img{width: 100%;}
+        }
+        .info{margin-left: 90px;text-align: center;}
+        h3{font-family: $love;font-size: 45px;margin-left: 30px;color: rgb(215, 123, 65);margin-top: 60px;}
+        p{font-family: $love;font-size: 16px;margin-top: 20px;margin-left: 30px;color: rgb(30, 68, 83);line-height: 20px;}
+        
+        form{margin-top: 40px;margin-left: 20px;}
+        input{width: 85%;border: 0px;height: 60px;margin: 10px;}
+        input::placeholder{padding: 20px;}
+        textarea{border: 0px;width: 85%;margin-left: 0px;margin-top: 10px;}
+        textarea::placeholder{padding: 20px;}
+        button{background-color: rgb(0, 57, 79);color: rgb(255, 255, 255);height: 70px;width: 82%;border: 0px;margin-top: 10px;margin-bottom: 80px;margin-left: 20px;font-size: 20px;}
+    }
+    
+    .contact{background-image: url(./imgs/Rectangle\ 80.png); height: 400px; margin-top: 100px;
+        h3{font-family: $love;font-size: 45px;margin-left: 30px;color: rgb(237, 238, 240);padding-top: 150px;}
+        p{font-family: $love;font-size: 20px;margin-top: 20px;margin-left: 30px;color: rgb(237, 238, 240);line-height: 30px; margin-bottom: 40px;}
+        .links{display: flex; flex-direction: row; padding: 0px;
+        .phone{margin-left: 150px;}}}
+    
+    
+    footer{text-align: center;
+        .image{width: 21%; margin-left: 40%; margin-bottom: 20px;
+            img{width: 100%;}
+        }
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+
+       
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
+}
